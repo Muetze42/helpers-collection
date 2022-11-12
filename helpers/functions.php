@@ -178,3 +178,21 @@ if (!function_exists('getDomain')) {
         return $domain;
     }
 }
+
+if (!function_exists('stringifyItem')) {
+    /**
+     * „Stringify“ objects and arrays
+     *
+     * @param mixed $message
+     * @return mixed|string
+     */
+    function stringifyItem(mixed $message): mixed
+    {
+        if (is_array($message) || is_object($message)) {
+            $prefix = is_array($message) ? 'array' : 'object';
+            return $prefix.' '.json_encode($message, JSON_UNESCAPED_UNICODE);
+        }
+
+        return $message;
+    }
+}
