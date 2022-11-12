@@ -1,0 +1,31 @@
+{
+    "name": "norman-huth/helpers-collection",
+    "description": "Personal collection of helper functions, macros, commands and other stuff for PHP and Laravel",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "NormanHuth\\Helpers\\": "src/"
+        },
+        "files": [
+            "helpers/functions.php",
+            "helpers/laravel.php",
+            "helpers/nova.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Norman Huth",
+            "homepage": "https://huth.it"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NormanHuth\\Helpers\\ServiceProvider"
+            ]
+        }
+    }
+}
