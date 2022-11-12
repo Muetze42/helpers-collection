@@ -87,9 +87,9 @@ if (!function_exists('replaceNullValueWithEmptyString')) {
     }
 }
 
-if (!function_exists('fileGetFilename')) {
+if (!function_exists('fileGetExtension')) {
     /**
-     * Get file extension
+     * Get file extension from a file path
      *
      * @param string $file
      * @return string
@@ -102,7 +102,7 @@ if (!function_exists('fileGetFilename')) {
 
 if (!function_exists('fileGetFilename')) {
     /**
-     * Get file extension
+     * Get filename from a file path
      *
      * @param string $file
      * @return string
