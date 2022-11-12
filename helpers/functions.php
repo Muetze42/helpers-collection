@@ -134,7 +134,7 @@ if (!function_exists('lastAnd')) {
         }
 
         if (function_exists($translateFunction)) {
-            call_user_func($translateFunction, $word);
+            $word = call_user_func($translateFunction, $word);
         }
 
         return substr_replace($content, ' '.$word, strrpos($content, $glue), 1);
