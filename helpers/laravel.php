@@ -45,7 +45,7 @@ if (!function_exists('getBatch')) {
      */
     function getBatch(mixed $model, string $column = 'batch'): int
     {
-        $batch = optional($model::orderByDesc($column)->first())->batch;
+        $batch = (int) optional($model::orderByDesc($column)->first())->batch;
         $batch++;
 
         return $batch;
