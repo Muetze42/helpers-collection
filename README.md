@@ -1,3 +1,6 @@
 # Helpers Collection
 
-Personal collection of helper functions, macros, commands and other stuff for PHP and Laravel
+Splitted to:
+
+* [helpers-collection-php](https://github.com/Muetze42/helpers-collection-php)
+* [helpers-collection-laravel](https://github.com/Muetze42/helpers-collection-laravel)
