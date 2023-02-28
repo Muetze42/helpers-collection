@@ -1112,9 +1112,6 @@ boolean expression. If the array element has a numeric key, it will always be in
         'p-4 bg-red'
     */
 
-This method powers Laravel's functionality allowing [merging classes with a Blade component's attribute bag](/docs/{{version}}/blade#conditionally-merge-classes) as well as
-the `@class` [Blade directive](/docs/{{version}}/blade#conditional-classes).
-
 ### `Arr::undot()`
 
 The `Arr::undot` method expands a single-dimensional array that uses "dot" notation into a multi-dimensional array:
@@ -1736,7 +1733,7 @@ The `Str::padRight` method wraps PHP's `str_pad` function, padding the right sid
 ### `Str::plural()`
 
 The `Str::plural` method converts a singular word string to its plural form. This function
-supports [any of the languages support by Laravel's pluralizer](/docs/{{version}}/localization#pluralization-language):
+supports any of the languages support by Laravel's pluralizer:
 
     use NormanHuth\Helpers\Str; # or use Illuminate\Support\Str;
 
@@ -1763,7 +1760,7 @@ You may provide an integer as a second argument to the function to retrieve the 
 ### `Str::pluralStudly()`
 
 The `Str::pluralStudly` method converts a singular word string formatted in studly caps case to its plural form. This function
-supports [any of the languages support by Laravel's pluralizer](/docs/{{version}}/localization#pluralization-language):
+supports any of the languages support by Laravel's pluralizer:
 
     use NormanHuth\Helpers\Str; # or use Illuminate\Support\Str;
 
@@ -1865,7 +1862,7 @@ The `Str::reverse` method reverses the given string:
 
 ### `Str::singular()`
 
-The `Str::singular` method converts a string to its singular form. This function supports [any of the languages support by Laravel's pluralizer](/docs/{{version}}/localization#pluralization-language):
+The `Str::singular` method converts a string to its singular form. This function supports any of the languages support by Laravel's pluralizer:
 
     use NormanHuth\Helpers\Str; # or use Illuminate\Support\Str;
 
