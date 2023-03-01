@@ -22,7 +22,7 @@ class ContactController extends Controller
     {
         $request->validate([
             // ...
-            'email'   => ['required', 'email', new DisposableEmail, 'confirmed'],
+            'email'   => ['required', 'email', new DisposableEmail, 'confirmed'], // [tl! focus] 
             // ...
         ]);
 }

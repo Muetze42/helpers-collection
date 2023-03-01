@@ -5,11 +5,11 @@
 This Trait logs model activities with default name (see examples) except created_at, updated_at and hidden attributes.
 
 ```php
-use NormanHuth\HelpersLaravel\Traits\Spatie\LogsActivityTrait;
+use NormanHuth\HelpersLaravel\Traits\Spatie\LogsActivityTrait;  // [tl! focus] 
 
 class Page extends Model
 {
-    use LogsActivityTrait;
+    use LogsActivityTrait;  // [tl! focus] 
 }
 ```
 

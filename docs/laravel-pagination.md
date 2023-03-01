@@ -1,26 +1,8 @@
 # Laravel Pagination
 
-## Remove Links Only In Laravel Resources
+## Remove Links Only In Laravel Resources (Recommended)
 
 Use `NormanHuth\HelpersLaravel\App\Http\Resources\Json\JsonResource` instead of `Illuminate\Http\Resources\Json\JsonResource` in Resources.
-
-Optional. Show Link in Index Route. (Experimental)
-
-````php
-namespace App\Http\Resources;
-
-use NormanHuth\HelpersLaravel\App\Http\Resources\Json\JsonResource;
-
-class PostResource extends JsonResource
-{
-     /**
-     * Optional: Set a key name to add a simple route in the resource array
-     *
-     *@varstring|null
-     */
-     protected ?string $addSimpleShowRoute = 'link';
-}
-````
 
 ## Remove First Page Query From **All** Links
 
@@ -35,10 +17,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
 			//
-			app()->bind(
-          \Illuminate\Pagination\LengthAwarePaginator::class,
-          \NormanHuth\HelpersLaravel\Support\LengthAwarePaginator::class
-			);
+			app()->bind(  // [tl! focus] 
+                \Illuminate\Pagination\LengthAwarePaginator::class,  // [tl! focus] 
+                \NormanHuth\HelpersLaravel\Support\LengthAwarePaginator::class  // [tl! focus] 
+			);  // [tl! focus] 
 ```
 
 ## Example Output

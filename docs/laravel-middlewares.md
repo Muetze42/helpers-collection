@@ -11,7 +11,7 @@ protected $middlewareGroups = [
 	//...
 	'api' => [
             // ..
-            \NormanHuth\HelpersLaravel\App\Http\Middleware\ForceJsonResponse::class,
+            \NormanHuth\HelpersLaravel\App\Http\Middleware\ForceJsonResponse::class,  // [tl! focus] 
              // ..
         ],
 	//...
@@ -51,7 +51,7 @@ Example usage in Kernel:
 ```php
 'api' => [
     // ...
-    \NormanHuth\HelpersLaravel\App\Http\Middleware\SanctumOrGuest::class,
+    \NormanHuth\HelpersLaravel\App\Http\Middleware\SanctumOrGuest::class,  // [tl! focus] 
 ],
 ```
 

@@ -9,7 +9,7 @@ return [
 		 /*
      * The class that contains the strategy for determining a media file's path.
      */
-    'path_generator' => NormanHuth\HelpersLaravel\Spatie\MediaLibrary\CustomPathGenerator::class,
+    'path_generator' => NormanHuth\HelpersLaravel\Spatie\MediaLibrary\CustomPathGenerator::class, // [tl! focus] 
 	// ...
 ];
 ```
