@@ -34,13 +34,11 @@ These methods and functions are all also available in the PHP helpers package.
 
 <div class="child-columns-3xs max-w-4xl">
 
-[Str::getExcerpt](#str-get-excerpt)
 [Str::slug](#str-slug)
 [Str::spaceBeforeCapitals](#str-space-before-capitals)
 [Str::httpBuildQueryUrl](#str-http-build-query-url)
 [Str::indexNumber](#str-index-number)
 [Str::lastAnd](#str-last-and)
-[Str::randomWord](#str-random-word)
 [Str::generateSerialNo](#str-generate-serial-no)
 [Str::ceilUpNearest](#str-ceil-up-nearest)
 [Str::fillDigits](#str-fill-digits)
@@ -66,7 +64,7 @@ These methods and functions are all also available in the PHP helpers package.
 
 <div class="child-columns-3xs max-w-4xl">
 
-[base_path()](#base-path)
+[base_path](#base-path)
 </div>
 
 ## Methods & Functions (Extended)
@@ -187,6 +185,13 @@ These methods and functions are all also available in the PHP helpers package.
 [Str::words](#str-words)
 </div>
 
+### Miscellaneous (Extended) {#miscellaneous-extended-index}
+
+<div class="child-columns-3xs max-w-4xl">
+
+[now](#now)
+</div>
+
 ## Arrays & Objects
 
 ### `Arr::clean`
@@ -207,7 +212,7 @@ arrayClean(['name' => 'Norman', 'lastname' => '', 'phone' => null], true);
 // ['name' => 'Norman']
 ```
 
-### `Arr::keyMap`
+### `Arr::keyMap()`
 
 The `Arr::keyMap` method (alternative `arrayKeyMap` function) applies the callback to the elements of the given array keys:
 
@@ -221,31 +226,6 @@ arrayKeyMap('ucfirst', ['cars'  => 1, 'boats' => 0, 'bikes' => 2]);
 ```
 
 ## Strings
-
-### `Str::getExcerpt`
-
-Get excerpt of a string:
-
-```php
-use NormanHuth\Helpers\Str;
-
-$string = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.';
-
-Str::getExcerpt($string, 10);
-strExcerpt($string, 10);
-
-// "Lorem ipsum dolor.."
-
-Str::getExcerpt($string, 10, 'Lorem ipsum');
-strExcerpt($string, 10, 'Lorem ipsum');
-
-// "Lorem ipsum"
-
-Str::getExcerpt($string, 5, 'Lorem ipsum');
-strExcerpt($string, 5, 'Lorem ipsum');
-
-// "Lorem..."
-```
 
 ### `Str::slug()`
 
@@ -275,7 +255,7 @@ strSpaceBeforeCapitals($string);
 // "Add Whitespace Before Every Upper Char"
 ```
 
-### `Str::httpBuildQueryUrl`
+### `Str::httpBuildQueryUrl()`
 
 Domain with queries via `http_build_query`:
 
@@ -288,7 +268,7 @@ httpBuildQueryUrl('https://huth.it', ['foo' => 'bar', 'one' => 'two']);
 // "https://huth.it?foo=bar&one=two"
 ```
 
-### `Str::indexNumber`
+### `Str::indexNumber()`
 
 Get index number of an integer:
 
@@ -316,7 +296,7 @@ indexNumber(1230, 1000);
 // 1000
 ```
 
-### `Str::lastAnd`
+### `Str::lastAnd()`
 
 Replace the last comma in a list with `and` word:
 
@@ -329,19 +309,7 @@ Str::lastAnd(['Jane', 'John', 'Norman']);
 // "Jane, John and Norman"
 ```
 
-### `Str::randomWord`
-
-Return a random word by array of words:
-
-```php
-use NormanHuth\Helpers\Str;
-
-Str::randomWord(['Jane', 'John', 'Norman']);
-
-// "Jane" or "John" or "Norman"
-```
-
-### `Str::generateSerialNo`
+### `Str::generateSerialNo()`
 
 Generate a serial number:
 
@@ -355,7 +323,7 @@ Str::generateSerialNo(false, 3, 3, ' ');
 // "1uX hIw hoQ"
 ```
 
-### `Str::ceilUpNearest`
+### `Str::ceilUpNearest()`
 
 Round up to the nearest multiple of `E`.
 
@@ -371,7 +339,7 @@ ceilUpNearest(27, 10);
 // 30.0
 ```
 
-### `Str::fillDigits`
+### `Str::fillDigits()`
 
 Format int with leading zeros:
 
@@ -387,7 +355,7 @@ fillDigits(23, 3);
 // "023"
 ```
 
-### `Str::randomHexColor`
+### `Str::randomHexColor()`
 
 Get a random HEX color:
 
@@ -399,7 +367,7 @@ Str::randomHexColor();
 // "551acd"
 ```
 
-### `Str::jsonPrettyEncode`
+### `Str::jsonPrettyEncode()`
 
 Returns the JSON representation pretty and unescaped of a value:
 
@@ -417,7 +385,7 @@ jsonPrettyEncode(['foo' => 'bar', 'dog' => 'fur']);
 */
 ```
 
-### `Str::emojiToUnicode`
+### `Str::emojiToUnicode()`
 
 Encode emojis to unicode:
 
@@ -429,7 +397,7 @@ Str::emojiToUnicode('😊');
 // U+1F60A
 ```
 
-### `Str::normalizeUserSubmit`
+### `Str::normalizeUserSubmit()`
 
 Trim every line and remove doubled whitespaces and new lines:
 
@@ -442,7 +410,7 @@ normalizeUserSubmit("Hi\n\nLorem Ipsum");
 // "Hi\nLorem Ipsum"
 ```
 
-### `Str::getDomain`
+### `Str::getDomain()`
 
 Get Domain name from URL:
 
@@ -2072,6 +2040,15 @@ truncated string:
     // Perfectly balanced, as >>>
 
 ## Other Utilities
+
+
+## Miscellaneous (Extended)
+
+### `now()`
+
+The `now` function creates a new `Carbon` instance for the current time:
+
+    $now = now();
 
 ### Benchmarking
 
