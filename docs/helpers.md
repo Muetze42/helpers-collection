@@ -2,11 +2,11 @@
 
 <div class="hashtag-list">
 
-- [Available Methods & Functions](#available-methods)
-- [Available extended Methods & Functions](#available-methods-by-laravel)
+- [Available Methods & Functions](#available-methods-n-functions)
+- [Available extended Methods & Functions](#methods-n-functions-extended)
 - [Other Utilities by Laravel](#other-utilities)
-    - [Benchmarking](#benchmarking)
-    - [Lottery](#lottery)
+  - [Benchmarking](#benchmarking)
+  - [Lottery](#lottery)
 
 </div>
 

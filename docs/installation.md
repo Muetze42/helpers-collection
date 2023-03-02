@@ -10,6 +10,12 @@ This package extends [illuminate/support](https://github.com/illuminate/support)
 composer require norman-huth/helpers-collection-php
 ```
 
+### Testing PHP Version
+
+```nothing
+./vendor/bin/phpunit tests
+```
+
 ## Install Laravel Version
 
 This version includes `norman-huth/helpers-collection-php`
