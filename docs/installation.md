@@ -21,5 +21,5 @@ composer require norman-huth/helpers-collection-php
 This version includes `norman-huth/helpers-collection-php`
 
 ```nothing
-composer require norman-huth/helpers-collection-php
+composer require norman-huth/helpers-collection-laravel
 ```
